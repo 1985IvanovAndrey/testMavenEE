@@ -1,5 +1,7 @@
 <%@ page import="com.CallingClassFromJsp" %>
-<%@ page import="java.util.ArrayList" %><%--
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.sql.SQLException" %>
+<%@ page import="com.NamesToWeb" %><%--
   Created by IntelliJ IDEA.
   User: Dron
   Date: 13.06.2018
@@ -12,10 +14,10 @@
     <title>Title</title>
 </head>
 <body>
-6456654
-<% for (String s : CallingClassFromJsp.names) {
-    out.println(s);
-}
-%>
+<%  int i=1;
+    for (String s : com.CallingClassFromJsp.getArrayStudentName()) {
+    out.println("<br/>"+i+" student name ="+s);
+    i++;
+}%>
 </body>
 </html>

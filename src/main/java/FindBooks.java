@@ -14,7 +14,7 @@ public class FindBooks extends HttpServlet {
         // The resulting Web page will be sent back via the
         // I/O stream that response variable contains
 
-      request.getRequestDispatcher("buildTest.jsp").forward(request, response);
+      request.getRequestDispatcher("inWeb.jsp").forward(request, response);
 
 //        PrintWriter out = response.getWriter();
 //        out.println("Hello from FindBooks");
