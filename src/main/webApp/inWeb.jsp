@@ -13,7 +13,7 @@
 </head>
 <body>
 6456654
-<% for (String s : CallingClassFromJsp.) {
+<% for (String s : CallingClassFromJsp.names) {
     out.println(s);
 }
 %>
